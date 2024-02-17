@@ -1,2 +1,8 @@
-<p>dashboard-layout works!</p>
-<router-outlet />
+<h1>Dashboard</h1>
+<button (click)="onLogout()">Cerrar Sesión</button>
+<hr />
+<h3>User: {{ user()?.name }}</h3>
+<a routerLink="/auth/login">Ir al login</a>
+<br />
+<pre>{{ user() | json }}</pre>
+<!-- <router-outlet /> -->
